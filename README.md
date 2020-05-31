@@ -1,3 +1,13 @@
+# JDBC CLI Application
+This is a database management system for retail stores written in java and SQL.
+
+## Prerequisite .
+
+ - **Java 8** 
+ - [***MySql (Server, Workbench and J Connector)*** ](https://dev.mysql.com/downloads/installer/)
+ 
+
+
 ## Steps.
 
  1. Add your MySQL connector to your classpath enviromental variables.
@@ -23,5 +33,3 @@
  6. Obtain a list of stAFF who have sold at least £[*STAFF SALE THRESHOLD*] of items during the store's lifetime and print their names alongside the amount.
  7. Figuring out which staff has sold the most of beggest product sellers according to the *PRODUCT_SALES_THRESHOLD*.
  8. The criteria of teh employee of the year is staff that have sold more than the *STAFF_SALES_THRESHOLD* and also sold at least one of the products that qualify for more than the *PRODUCT_SALES_THRESHOLD*.
-
-

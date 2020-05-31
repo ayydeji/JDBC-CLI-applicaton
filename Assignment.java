@@ -2,32 +2,15 @@
  * @author Abdullah Muhammad-Kamal
 **/
 // CREATE TABLE inventory(
-// ProductID INTEGER NOT NULL,
+// ProductID INTEGER NOT NULL auto_increment,
 // ProductDesc varchar(30),
 // ProductPrice numeric(8,2),
 // ProductStockAmount integer,
 // PRIMARY KEY (ProductID)
 // );
-/**
- * Creating a sequnce so that will auto increment the primary key ProductID,
- * I am doing this so that we do not have to keep track of the numbers of
- * products in the database, when a new product is added the value of productID
- * will be automatically incremented.
- */
-// CREATE SEQUENCE inv_seq START WITH 1;
-//
-// CREATE OR REPLACE TRIGGER inv_bir
-// BEFORE INSERT ON inventory
-// FOR EACH ROW
-//
-// BEGIN
-//     SELECT inv_seq.NEXTVAL
-//     INTO :new.ProductID
-//     FROM dual;
-// END;
-// /
+
  // CREATE TABLE orders(
- // OrderID INTEGER NOT NULL,
+ // OrderID INTEGER NOT NULL auto_increment,
  // OrderType varchar(30),
  // OrderCompleted INTEGER,
  // OrderPlaced Date,
@@ -35,24 +18,7 @@
  // CONSTRAINT complet_chek CHECK (OrderCompleted = 0 OR OrderCompleted = 1),
  // PRIMARY KEY (OrderID)
  // );
-/**
- * Creating a sequnce so that will auto increment the primary key OrderID,
- * I am doing this so that we do not have to keep track of the numbers of
- * orders in the database, when a new product is added the value of OrderID
- * will be automatically incremented.
- */
-//  CREATE SEQUENCE ord_seq START WITH 1;
-//
-// CREATE OR REPLACE TRIGGER ord_bir
-// BEFORE INSERT ON orders
-// FOR EACH ROW
-//
-// BEGIN
-//     SELECT ord_seq.NEXTVAL
-//     INTO :new.OrderID
-//     FROM dual;
-// END;
-// /
+
  // CREATE TABLE order_products(
  // OrderID INTEGER,
  // ProductID INTEGER,
@@ -93,29 +59,12 @@
  // );
 //
  // CREATE TABLE staff(
- // StaffID INTEGER NOT NULL,
+ // StaffID INTEGER NOT NULL auto_increment,
  // FName varchar(30),
  // LName varchar(30),
  // PRIMARY KEY (StaffID)
  // );
-/**
- * Creating a sequnce so that will auto increment the primary key StaffID,
- * I am doing this so that we do not have to keep track of the numbers of
- * products in the database, when a new product is added the value of StaffID
- * will be automatically incremented.
- */
-//  CREATE SEQUENCE stff_seq START WITH 1;
-//
-// CREATE OR REPLACE TRIGGER stff_bir
-// BEFORE INSERT ON staff
-// FOR EACH ROW
-//
-// BEGIN
-//     SELECT stff_seq.NEXTVAL
-//     INTO :new.StaffID
-//     FROM dual;
-// END;
-// /
+
  // CREATE TABLE staff_orders(
  // StaffID INTEGER,
  // OrderID INTEGER,
